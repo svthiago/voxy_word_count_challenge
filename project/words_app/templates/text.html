@@ -1,0 +1,14 @@
+<!-- <form action="/words_app/" method="post">
+    <label for="your_name">Insira o texto: </label>
+    <input id="your_name" type="text" name="your_name" maxlength="200" required>
+    <input type="submit">
+</form> -->
+<form action="/words_app/" method="post">
+    <h2>Word Count App</h2>
+    <h4>Insert the text below:</h4>
+    {% csrf_token %}
+    {{ form }}
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
